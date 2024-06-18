@@ -36,7 +36,7 @@ export default {
       this.started = true
       let x = Math.floor(Math.random() * 5) + 1;
       let y = Math.floor(Math.random() * 5) + 1;
-      this.$emit('command', `PLACE ${x} ${y} 1 NORTH`);
+      this.$emit('command', `PLACE ${x} ${y} NORTH`);
     },
     move() {
       this.$emit('command', 'MOVE')
