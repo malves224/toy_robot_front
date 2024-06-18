@@ -48,7 +48,6 @@ export default {
   methods: {
     sendCommand(command) {
       this.subscription.perform('receive', { message: command });
-      // Update the robot position and direction accordingly her
     },
     async getRobots() {
      const response = await roboService.getAllRobots()
