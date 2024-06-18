@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BACKEND_URL = `http://${process.env.BACKEND_URL}`
+const BACKEND_URL = `http://159.65.236.207:3000`
 const apiUrl = `${BACKEND_URL}/robots`;
 
 const robotService = {
