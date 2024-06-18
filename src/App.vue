@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container" id="app">
+    <RobotController />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RobotController from './components/RobotController.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    RobotController
   }
 }
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #80808091;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }
 </style>
